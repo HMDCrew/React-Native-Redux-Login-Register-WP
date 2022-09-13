@@ -27,17 +27,6 @@ export class RegisterComponent extends Component {
         }
     }
 
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        const { navigation } = this.props;
-
-        if ('' !== this.props.login.token && undefined !== this.props.login.token && !this.props.login.isLoaded) {
-            navigation.navigate('Home')
-        }
-        if( false === this.props.login.auth_status && !this.props.login.isLoaded ) {
-            ToastAndroid.show('Login falied', ToastAndroid.SHORT);
-        }
-    }
-
     async registerUser() {
         this.setState({ loading: true });
         try {
