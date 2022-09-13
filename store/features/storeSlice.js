@@ -15,21 +15,7 @@ const productsSlice = createSlice({
     name: 'products',
     initialState,
     reducers: {},
-    extraReducers: {
-        /*
-        [getProducts.pending]: (state) => {
-            state.isLoading = true;
-        },
-        [getProducts.fulfilled]: (state, action) => {
-            state.isLoading = false;
-            state.list = action.payload;
-        },
-        [getProducts.rejected]: (state) => {
-            state.isLoading = false;
-        },
-        */
-    },
+    extraReducers: {},
 });
 
-// export const { clearCart, removeItem, increase, decrease, calculateTotals } = productsSlice.actions;
 export default productsSlice.reducer;

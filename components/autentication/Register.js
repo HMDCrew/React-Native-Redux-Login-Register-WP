@@ -141,7 +141,7 @@ export class RegisterComponent extends Component {
                         color={COLORS.primary}
                         loading={loading}
                         loadingIndicatorPosition="trailing"
-                        onPress={() => /* navigation.navigate('Settings')*/ this.registerUser() }
+                        onPress={() => this.registerUser() }
                     />
                     <Button
                         title="Login"

@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native'
 import * as Font from 'expo-font';
 
-import Login from '../screens/Login'
+import Auth from '../screens/Auth'
 import Home from '../screens/Home'
 import Details from '../screens/Details'
 import Profile from '../screens/Profile'
@@ -54,9 +54,9 @@ export default class AppNavigation extends Component {
             <NavigationContainer theme={this.state.theme}>
                 <Stack.Navigator
                     screenOptions={{ headerShown: false }}
-                    initialRouteName="Login"
+                    initialRouteName="Auth"
                 >
-                    <Stack.Screen name="Login" component={Login} />
+                    <Stack.Screen name="Auth" component={Auth} />
                     <Stack.Screen name="Home" component={Home} />
                     <Stack.Screen name="Details" component={Details} />
                     <Stack.Screen name="Profile" component={Profile} />

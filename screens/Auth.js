@@ -9,7 +9,7 @@ import LoginComponent from '../components/autentication/Login'
 import RegisterComponent from '../components/autentication/Register'
 
 
-class Login extends Component {
+class Auth extends Component {
 
     constructor(props) {
         super(props)
@@ -98,4 +98,4 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {}
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login)
+export default connect(mapStateToProps, mapDispatchToProps)(Auth)
