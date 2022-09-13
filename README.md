@@ -102,9 +102,9 @@
 ```
 
 ### Note:
-other documentation
+Requirement plugin: Download
+[JWT Authentication for WP REST API](https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/)
+
+Other documentation:
 [React Native Redux Prg.](https://github.com/HMDCrew/React-Native-Redux)
 [Customn routes in plugin](https://github.com/HMDCrew/REST-API-WP-Woo)
-
-requirement plugin: Download
-[JWT Authentication for WP REST API](https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/)
