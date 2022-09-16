@@ -4,6 +4,7 @@ import axios from 'axios'
 import { HStack, Stack, Text, TextInput, IconButton, Button } from "@react-native-material/core"
 import { ToastAndroid } from 'react-native'
 import { connect } from 'react-redux'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 import { COLORS, styles } from '../../constants/style'
 import { componentLogin } from '../../store/features/loginSlice'
@@ -43,6 +44,7 @@ export class RegisterComponent extends Component {
 
             this.props.componentLogin(response);
             this.setState({ loading: false, isLoaded: true })
+            AsyncStorage.setItem('login-data', JSON.stringify(response))
 
         } catch (error) {
             console.log(error);
